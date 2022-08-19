@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_secondary">#65686C</color>
+    <color name="red_primary">#E73D45</color>
+    <color name="grey_gradient">#282D32</color>
+    <color name="grey_primary">#9DA1A4</color>
+    <color name="green_on">#C0CE31</color>
+    <color name="black_bg">#1A1E23</color>
+    <color name="white_primary">#FDFDFF</color>
+    <color name="bg_bg">#14213D</color>
+    <color name="pink_boy">#F898A4</color>
+</resources>

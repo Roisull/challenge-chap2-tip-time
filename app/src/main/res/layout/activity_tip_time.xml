@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    tools:context=".TipTimeActivity">
+
+    <TextView
+        android:id="@+id/et_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_et"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="12sp"
+        android:paddingLeft="32dp"
+        android:paddingTop="11dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="11dp"
+        android:text="Tip Time"
+        android:textColor="@color/grey_primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/bg_texture"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:src="@mipmap/logo_cost_service"
+        android:layout_marginTop="85dp"
+        android:foregroundGravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+    <EditText
+        android:id="@+id/et_costOfService"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="30sp"
+        android:hint="cost of service"
+        android:textAlignment="center"
+        android:textColor="@color/white_primary"
+        android:textColorHint="@color/grey_secondary"
+        android:backgroundTint="@color/grey_secondary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_howService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="11sp"
+        android:text="how was the service?"
+        android:textColor="@color/grey_secondary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_costOfService" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_serviceAmazing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/black_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_howService">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_et">
+
+            <RadioButton
+                android:id="@+id/rb_serviceAmazing"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/red_primary"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tv_serviceAmazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Amazing(20%)"
+                android:textSize="11dp"
+                android:textColor="@color/grey_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/rb_serviceAmazing"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_serviceGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/black_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_howService"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_et">
+
+            <RadioButton
+                android:id="@+id/rb_serviceGood"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/red_primary"
+                android:checked="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView
+                android:id="@+id/tv_serviceGood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Good(18%)"
+                android:textSize="11dp"
+                android:textColor="@color/grey_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/rb_serviceGood"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_serviceOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/black_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_howService"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_et">
+
+            <RadioButton
+                android:id="@+id/rb_serviceOk"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/red_primary"
+                android:checked="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <TextView
+                android:id="@+id/tv_serviceOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Ok(15%)"
+                android:textSize="11dp"
+                android:textColor="@color/grey_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/rb_serviceOk"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_roundUpTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_serviceOk">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round up tip?"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="11sp"
+            android:textColor="@color/grey_secondary"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:checked="true"
+            app:track="@drawable/custom_track"
+            android:thumb="@drawable/custom_thumb"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        android:text="calculate"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/bg_button"
+        app:layout_constraintTop_toBottomOf="@+id/ll_roundUpTip"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
