@@ -252,15 +252,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="80dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
         android:text="calculate"
         android:textAllCaps="false"
-        android:fontFamily="@font/poppins_semibold"
-        android:background="@drawable/bg_button"
-        app:layout_constraintTop_toBottomOf="@+id/ll_roundUpTip"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
