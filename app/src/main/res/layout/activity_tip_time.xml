@@ -99,7 +99,6 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:buttonTint="@color/red_primary"
-                android:checked="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -146,7 +145,6 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:buttonTint="@color/red_primary"
-                android:checked="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -193,7 +191,6 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:buttonTint="@color/red_primary"
-                android:checked="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -243,7 +240,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:duplicateParentState="true"
-            android:checked="true"
             app:track="@drawable/custom_track"
             android:thumb="@drawable/custom_thumb"/>
 
