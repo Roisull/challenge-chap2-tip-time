@@ -53,6 +53,7 @@
         android:fontFamily="@font/poppins_bold"
         android:textSize="30sp"
         android:hint="cost of service"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="@color/white_primary"
         android:textColorHint="@color/grey_secondary"
