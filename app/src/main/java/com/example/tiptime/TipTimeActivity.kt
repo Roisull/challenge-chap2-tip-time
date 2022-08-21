@@ -2,6 +2,7 @@ package com.example.tiptime
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import android.widget.RadioButton
 
@@ -20,15 +21,26 @@ class TipTimeActivity : AppCompatActivity() {
         val rbServiceGood: RadioButton = findViewById(R.id.rb_serviceGood)
         val rbServiceOk: RadioButton = findViewById(R.id.rb_serviceOk)
 
-        if (rbServiceAmazing.isChecked){
+
+        rbServiceAmazing.setOnClickListener(View.OnClickListener {
+            it.isActivated
+
             rbServiceGood.isChecked = false
             rbServiceOk.isChecked = false
-        }else if (rbServiceGood.isChecked){
+        })
+
+        rbServiceGood.setOnClickListener(View.OnClickListener {
+            it.isActivated
+
             rbServiceAmazing.isChecked = false
             rbServiceOk.isChecked = false
-        }else if (rbServiceOk.isChecked){
+        })
+
+        rbServiceOk.setOnClickListener(View.OnClickListener {
+            it.isActivated
+
             rbServiceAmazing.isChecked = false
             rbServiceGood.isChecked = false
-        }
+        })
     }
 }
